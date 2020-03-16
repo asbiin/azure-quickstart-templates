@@ -36,7 +36,7 @@
     }
   },
   "variables": {
-    "sonarCollation": "Latin1_General_100_CS_AS"
+    "sonarCollation": "SQL_LATIN1_GENERAL_CP1_CS_AS"
   },
   "resources": [
     {
