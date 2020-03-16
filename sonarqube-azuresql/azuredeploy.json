@@ -12,6 +12,7 @@
     },
     "sq_PublicIP_DnsPrefix": {
       "type": "string",
+      "defaultValue": "sonarqube-vm",
       "minLength": 1,
       "maxLength": 32,
       "metadata": {
@@ -20,6 +21,7 @@
     },
     "sqVM_AppAdmin_UserName": {
       "type": "string",
+      "defaultValue": "sonar",
       "minLength": 1,
       "metadata": {
         "description": "Admin account name for the SonarQube VM"
@@ -33,6 +35,7 @@
     },
     "sqDB_Admin_UserName": {
       "type": "string",
+      "defaultValue": "sonar",
       "minLength": 1,
       "metadata": {
         "description": "Admin account name for Azure SQL Server"
@@ -56,7 +59,7 @@
     "sqDB_DBName": {
       "type": "string",
       "minLength": 1,
-      "defaultValue": "sonar",
+      "defaultValue": "sonarqube",
       "metadata": {
         "description": "Name of the SonarQube DB on the Azure SQL Server"
       }
@@ -106,8 +109,9 @@
     },
     "sqVM_LTS_Version": {
       "type": "string",
-      "defaultValue": "sonarqube-7.5",
+      "defaultValue": "sonarqube-8.2",
       "allowedValues": [
+        "sonarqube-8.2",
         "sonarqube-7.5",
         "sonarqube-7.4",
         "sonarqube-7.3",
